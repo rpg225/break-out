@@ -12,8 +12,26 @@
 
 <body>
 
-    <div class="" id="game-container">
+    <div id="game-container">
         <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <div id="game-ui">
+            <div class="ui-element"> Score: <span id="score">0</span></div>
+            <div class="ui-element"> Score: <span id="score">0</span></div>
+        </div>
+        <!-- Start Screen -->
+        <div id="start-screen" class="game-overlay active">
+            <h1>BREAKOUT </h1>
+            <h2>2025 REMASTERED</h2>
+            <button id="start-buton" class="action-button">START GAME</button>
+        </div>
+
+        <!-- Game Over Screen -->
+        <div class="game-overlay hidden" id="game-over-screen">
+            <h2 id="game-over-message">Game Over!</h2>
+            <button id="restart-button" class="action-button">PLAY AGAIN</button>
+        </div>
+        <!-- Level Complete Screen -->
+        <div id="level-complete-screen" class="game-overlay hidden"></div>
     </div>
 
     <!-- <h1 id="score">0</h1>
